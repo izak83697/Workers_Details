@@ -12,7 +12,7 @@ export function AddWorkers(props) {
 
   //Checks that all the fields of the details are complete and also that this Id does not exist in the system and then enters into the workers array
   function addWorkerToArray() {
-   let arr = props.arrWorkers;
+   let arr = [...props.arrWorkers];
     console.log(arr);
     if (details.name && details.age && details.ID) {
       let isExists = -1;
